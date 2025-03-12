@@ -1,15 +1,22 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import AIDailyGallery from './components/AIDailyGallery'
+import Steps from './components/Steps'
+import AIMusicGenerator from './components/AIMusicGenerator'
+import SKHynixAIPage from './components/SKHynixAIPage'
+import EpilogueSection from './components/epilogue-section'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <p className='text-6xl'>This is for testing</p>
-        <p className='text-5xl'>Testing is successful</p>
+      {/* <AIDailyGallery /> */}
+      {/* <Steps /> */}
+      <AIMusicGenerator />
+      <EpilogueSection />
+      <SKHynixAIPage />
     </>
   )
 }
