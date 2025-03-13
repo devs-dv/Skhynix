@@ -1,6 +1,6 @@
 export default function Step1() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-12 bg-gradient-to-br from-white to-green-50 font-sans">
+    <div className="max-w-6xl mx-auto px-6 py-12  font-sans">
       {/* Step Header */}
 
       {/* Content Section */}
