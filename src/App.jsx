@@ -26,7 +26,7 @@ function App() {
       <NavBar/>
       <ImageShow />
       <Step1/>
-      <StepTwo />
+      <Step2 />
       <AIContentSection/>
       <AIMusicGenerator />
       <EpilogueSection />
