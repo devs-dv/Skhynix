@@ -1,6 +1,38 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 const Hero = () => {
+
+const containerRef = useRef(null);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        // Play all videos inside the container when visible
+        containerRef.current.querySelectorAll("video").forEach((video) => {
+          video.play();
+        });
+      } else {
+        // Pause all videos when out of view
+        containerRef.current.querySelectorAll("video").forEach((video) => {
+          video.pause();
+        });
+      }
+    },
+    { threshold: 0.5 }
+  );
+
+  if (containerRef.current) {
+    observer.observe(containerRef.current);
+  }
+
+  return () => {
+    if (containerRef.current) {
+      observer.unobserve(containerRef.current);
+    }
+  };
+}, []);
+
   return (
     <section className="max-md:h-60">
       {/* Left Content */}
@@ -31,23 +63,72 @@ const Hero = () => {
       </div>
 
       {/* Right Content - Image Gallery */}
-      <div className="flex justify-end">
+      <div ref={containerRef} className="flex justify-end">
         <div className="grid grid-cols-4 gap-2 ml-[25%]">
           <div className="lg:mt-32 mt-8">
-            <img src="sample.png" className="w-80 h-auto" />
-            <img src="sample.png" className="w-80 h-auto" />
+            <video
+              src="/hero/c1r1.mp4"
+              className="w-80 h-auto rounded-[20px]"
+              muted
+              autoPlay
+              loop
+              playsInline
+            />
+            <img src="/hero/c1r2.png" className="w-80 h-auto rounded-[16px]" />
           </div>
           <div>
-            <img src="sample.png" className="w-80 h-auto" />
-            <img src="sample.png" className="w-80 h-auto" />
+            <video
+              src="/hero/c2r1.mp4"
+              className="w-80 h-auto rounded-[20px]"
+              muted
+              autoPlay
+              loop
+              playsInline
+            />
+            <video
+              src="/hero/c2r2.mp4"
+              className="w-80 h-auto rounded-[20px]"
+              muted
+              autoPlay
+              loop
+              playsInline
+            />
           </div>
           <div className="lg:mt-36 mt-5">
-            <img src="sample.png" className="w-80 h-auto" />
-            <img src="sample.png" className="w-80 h-auto" />
+            <video
+              src="/hero/c3r1.mp4"
+              className="w-80 h-auto rounded-[20px]"
+              muted
+              autoPlay
+              loop
+              playsInline
+            />
+            <video
+              src="/hero/c3r2.mp4"
+              className="w-80 h-auto rounded-[20px]"
+              muted
+              autoPlay
+              loop
+              playsInline
+            />
           </div>
           <div className="lg:-mt-5">
-            <img src="sample.png" className="w-80 h-auto" />
-            <img src="sample.png" className="w-80 h-auto" />
+            <video
+              src="/hero/c4r1.mp4"
+              className="w-80 h-auto rounded-[20px] "
+              muted
+              autoPlay
+              loop
+              playsInline
+            />
+            <video
+              src="/hero/c4r2.mp4"
+              className="w-80 h-auto rounded-[20px]"
+              muted
+              autoPlay
+              loop
+              playsInline
+            />
           </div>
         </div>
       </div>
