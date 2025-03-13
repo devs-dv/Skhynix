@@ -4,17 +4,17 @@ import { Instagram, Youtube } from "lucide-react";
 const ImageShow = () => {
   return (
     <div className="">
-      <div className="bg-[linear-gradient(to_bottom,#000000,#808080,#FFFFFF)]">
+      <div className="bg-[linear-gradient(to_bottom,#000000,#808080,#FFFFFF)] max-md:p-1">
         <Hero />
         {/* ye wale mei maine mission dala h yaha se  */}
         <section className="w-full flex flex-col items-center  text-center">
-          <div className=" max-w-full text-xl text-[#A5C403] border-2 border-[#A5C403] px-8 py-2 rounded-full">
+          <div className=" max-w-full text-xl max-md:text-base text-[#A5C403] border-2 border-[#A5C403] px-8 py-2 max-md:py-1 max-md:px-6 rounded-full">
             Mission
           </div>
-          <h2 className="text-white text-5xl font-bold leading-none text-center mt-5 max-md:max-w-full max-md:text-[40px]">
+          <h2 className="text-white text-5xl max-md:text-2xl font-bold leading-none text-center mt-5 max-md:max-w-full max-md:text-[40px]">
             AI로 DAILY 콘텐츠 제작하기
           </h2>
-          <p className="text-white text-sm mt-10">
+          <p className="text-white text-sm max-md:text-xs mt-10">
             AI 기술 발전과 함께 콘텐츠 제작 방식도 진화하고 있다.
             <br />
             SK하이닉스 또한 생성형 AI로 DAILY 콘텐츠를 제작하며 창작 방식을
