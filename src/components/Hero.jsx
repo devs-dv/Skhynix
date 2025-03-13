@@ -68,7 +68,7 @@ useEffect(() => {
           <div className="lg:mt-32 mt-8">
             <video
               src="/hero/c1r1.mp4"
-              className="w-80 h-auto rounded-[16px]"
+              className="w-80 h-auto rounded-[16px] "
               muted
               autoPlay
               loop
@@ -79,7 +79,7 @@ useEffect(() => {
           <div>
             <video
               src="/hero/c2r1.mp4"
-              className="w-80 h-auto rounded-[16px] max-md:rounded-lg"
+              className="w-80 h-auto rounded-[16px] max-md:rounded-lg m-2"
               muted
               autoPlay
               loop
@@ -87,7 +87,7 @@ useEffect(() => {
             />
             <video
               src="/hero/c2r2.mp4"
-              className="w-80 h-auto rounded-[16px] max-md:rounded-lg"
+              className="w-80 h-auto rounded-[16px] max-md:rounded-lg m-2"
               muted
               autoPlay
               loop
@@ -97,7 +97,7 @@ useEffect(() => {
           <div className="lg:mt-36 mt-5">
             <video
               src="/hero/c3r1.mp4"
-              className="w-80 h-auto rounded-[16px] max-md:rounded-lg"
+              className="w-80 h-auto rounded-[16px] max-md:rounded-lg m-3"
               muted
               autoPlay
               loop
@@ -105,7 +105,7 @@ useEffect(() => {
             />
             <video
               src="/hero/c3r2.mp4"
-              className="w-80 h-auto rounded-[16px] max-md:rounded-lg"
+              className="w-80 h-auto rounded-[16px] max-md:rounded-lg m-3"
               muted
               autoPlay
               loop
@@ -115,7 +115,7 @@ useEffect(() => {
           <div className="lg:-mt-5">
             <video
               src="/hero/c4r1.mp4"
-              className="w-80 h-auto rounded-[16px] max-md:rounded-lg "
+              className="w-80 h-auto rounded-[16px] max-md:rounded-lg m-5"
               muted
               autoPlay
               loop
@@ -123,7 +123,7 @@ useEffect(() => {
             />
             <video
               src="/hero/c4r2.mp4"
-              className="w-80 h-auto rounded-[16px] max-md:rounded-lg"
+              className="w-80 h-auto rounded-[16px] max-md:rounded-lg m-5"
               muted
               autoPlay
               loop
