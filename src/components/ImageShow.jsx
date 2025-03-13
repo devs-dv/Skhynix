@@ -35,7 +35,7 @@ useEffect(() => {
 
   return (
     <div className="">
-      <div className="bg-[linear-gradient(to_bottom,#000000,#808080,#FFFFFF)] max-md:p-1">
+      <div className="bg-[linear-gradient(to_bottom,#000000,#4D4D4D,#C5C5C5,#FFFFFF)] max-md:p-1">
         <Hero />
         {/* ye wale mei maine mission dala h yaha se  */}
         <section className="w-full flex flex-col items-center  text-center">
@@ -59,7 +59,7 @@ useEffect(() => {
 
         {/* yaha se wo images add kiye h maine dekh le  */}
         {/* for larger screens */}
-                <section
+        <section
           ref={containerRef}
           className="md:p-20 flex items mt-48 max-lg:hidden"
         >
