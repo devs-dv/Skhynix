@@ -11,14 +11,14 @@ const NavBar = () => {
   return (
     <div>
       <header className="w-full  border-b border-gray-200">
-        <div className="container  px-4">
+        <div className="container">
           {/* Desktop Navbar */}
           <div className="hidden lg:flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex-shrink-0">
               <a href="/" className="flex items-center">
                 <span>
-                  <img src="logo.png" className="w-60 h-auto mb-5 mx-12" />
+                  <img src="logo.png" className="w-60 h-auto mb-5 mx-3" />
                 </span>
               </a>
             </div>
@@ -64,7 +64,7 @@ const NavBar = () => {
             </nav>
 
             {/* Search and Language */}
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-2">
               <div className="relative">
                 <input
                   type="text"
