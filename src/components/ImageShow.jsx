@@ -3,17 +3,17 @@ import Hero from "./Hero";
 import { Instagram, Youtube } from "lucide-react";
 const ImageShow = () => {
   return (
-    <div>
-      <Hero />
+    <div className="bg-[linear-gradient(to_bottom,#000000,#808080,#FFFFFF)]">
+      <Hero/>
       {/* ye wale mei maine mission dala h yaha se  */}
-      <section className="w-full flex flex-col items-center text-center">
-        <div className="w-[180px] max-w-full text-3xl text-[rgba(165,196,3,1)] font-bold whitespace-nowrap text-center tracking-[-0.3px] leading-none mt-[162px] px-9 py-[15px] rounded-[100px] border-[rgba(165,196,3,1)] border-solid border-[3px] max-md:mt-10 max-md:px-5">
+      <section className="w-full flex flex-col items-center  text-center">
+        <div className=" max-w-full text-xl text-[#A5C403] border-2 border-[#A5C403] px-8 py-2 rounded-full">
           Mission
         </div>
-        <h2 className="text-white text-6xl font-bold leading-none tracking-[-0.6px] text-center mt-[18px] max-md:max-w-full max-md:text-[40px]">
+        <h2 className="text-white text-5xl font-bold leading-none text-center mt-5 max-md:max-w-full max-md:text-[40px]">
           AI로 DAILY 콘텐츠 제작하기
         </h2>
-        <p className="text-white text-[22px] font-normal leading-6 tracking-[-0.22px] text-center mt-[37px] max-md:max-w-full">
+        <p className="text-white text-sm mt-10">
           AI 기술 발전과 함께 콘텐츠 제작 방식도 진화하고 있다.
           <br />
           SK하이닉스 또한 생성형 AI로 DAILY 콘텐츠를 제작하며 창작 방식을 확장해
@@ -26,29 +26,46 @@ const ImageShow = () => {
       {/* yaha tak */}
 
       {/* yaha se wo images add kiye h maine dekh le  */}
-      {/* Steps Section */}
-      <section className=" flex items">
-        <div className="grid grid-cols-5 max-md:grid-cols-2">
+      {/* for larger screens */}
+      <section className="md:p-20 flex items mt-48 max-lg:hidden">
+        <div className="grid grid-cols-5">
           <div>
             <img src="ImageGallery/c1r1.png" className="p-4" />
             <img src="ImageGallery/c1r2.png" />
           </div>
-          <div>
-            <img src="ImageGallery/c2r1.png" />
-            <img src="ImageGallery/c2r2.png" />
+          <div className="-mt-32">
+            <img src="ImageGallery/c2r1.png" className="p-2" />
+            <img src="ImageGallery/c2r2.png" className="p-2" />
           </div>
-          <div>
-            <img src="ImageGallery/c3r1.png" />
-            <img src="ImageGallery/c3r2.png" />
+          <div className="-mt-8">
+            <img src="ImageGallery/c3r1.png" className="p-4" />
+            <img src="ImageGallery/c3r2.png" className="p-4" />
           </div>
-          <div>
-            <img src="ImageGallery/c4r1.png" />
-            <img src="ImageGallery/c4r2.png" />
+          <div className="mt-10">
+            <img src="ImageGallery/c4r1.png" className="p-4" />
+            <img src="ImageGallery/c4r2.png" className="p-4" />
           </div>
-          <div>
-            <img src="ImageGallery/c5r1.png" />
-            <img src="ImageGallery/c5r2.png" />
+          <div className="-mt-20">
+            <img src="ImageGallery/c5r1.png" className="p-4" />
+            <img src="ImageGallery/c5r2.png" className="p-4" />
           </div>
+        </div>
+      </section>
+      {/*for mobile screens*/}
+      <section className="md:p-20 flex items lg:hidden">
+        <div className=" columns-2">
+          {/*Column 1 */}
+          <img src="ImageGallery/c1r1.png" className="p-2" />
+          <img src="ImageGallery/c1r2.png" />
+          <img src="ImageGallery/c3r1.png" className="p-2" />
+          <img src="ImageGallery/c3r2.png" className="p-2" />
+          <img src="ImageGallery/c5r2.png" className="p-2" />
+          {/*Column 2 */}
+          <img src="ImageGallery/c2r1.png" className="p-2" />
+          <img src="ImageGallery/c4r2.png" className="p-2" />
+          <img src="ImageGallery/c4r1.png" className="p-2" />
+          <img src="ImageGallery/c2r2.png" className="p-2" />
+          <img src="ImageGallery/c5r1.png" className="p-2" />
         </div>
       </section>
 
