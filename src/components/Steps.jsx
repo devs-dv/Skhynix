@@ -5,7 +5,7 @@ const Steps = () => {
   return (
     <div>
       <main className="min-h-screen bg-white">
-        {/* Header */}
+        
         <div className="container mx-auto px-4 py-12">
           <h1 className="text-center text-2xl md:text-3xl font-bold mb-12">
             AI 메모리 더 알아보기
