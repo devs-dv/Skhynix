@@ -10,6 +10,9 @@ import AIContentSection from './components/Step3'
 import Step2 from './components/Step2'
 import Step1 from './components/Step1'
 import ResponsiveImageGallery from './components/ResponsiveImageGallery'
+import StepTwo from './components/step-two/StepTwo'
+import ImageShow from './components/ImageShow'
+
 
 function App() {
   
@@ -18,9 +21,10 @@ function App() {
     <>
       {/* <AIDailyGallery /> */}
       {/* <Steps /> */}
-      <ResponsiveImageGallery />
+      {/* <ResponsiveImageGallery /> */}
+      <ImageShow />
       <Step1/>
-      {/* <Step2/> */}
+      <StepTwo />
       <AIContentSection/>
       <AIMusicGenerator />
       <EpilogueSection />
