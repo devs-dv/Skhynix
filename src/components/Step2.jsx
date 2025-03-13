@@ -3,7 +3,20 @@ import React from "react";
 const Step2 = () => {
   return (
     <div className="">
-      <img src="Vectors/dot1.png" className="absolute w-auto h-20 -right-1 mt-32"  />
+      <img
+        src="Vectors/dot1.png"
+        className="absolute w-auto h-16 -right-1 mt-32"
+      />
+      <div className="relative top-[72rem]">
+        <img
+          src="Vectors/dot2.png"
+          className="w-60"
+        />
+        <img
+          src="Vectors/dot3.png"
+          className=" w-40 mt-3"
+        />
+      </div>
       <div className="max-w-6xl flex mx-auto  px-4 py-8  relative">
         <div className="columns-2">
           <div>
@@ -56,7 +69,7 @@ const Step2 = () => {
               극대화하는 마케팅 전략으로 주목받고 있다.
             </p>
           </div>
-          <div className="mt-20 space-y-4">
+          <div className="mt-20 space-y-4 -ml-32">
             <h2 className="text-2xl font-bold">
               AI 기반 카툰 & 피드 연결 콘텐츠
             </h2>
