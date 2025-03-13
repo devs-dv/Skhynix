@@ -5,16 +5,16 @@ const Step2 = () => {
     <div className="">
       <img
         src="Vectors/dot1.png"
-        className="absolute w-auto h-16 -right-1 mt-32"
+        className="absolute w-72 h-auto -right-0 mt-56"
       />
       <div className="relative top-[72rem]">
         <img
           src="Vectors/dot2.png"
-          className="w-60"
+          className="w-64"
         />
         <img
           src="Vectors/dot3.png"
-          className=" w-40 mt-3"
+          className="w-44 mt-3"
         />
       </div>
       <div className="max-w-6xl flex mx-auto  px-4 py-8  relative">
