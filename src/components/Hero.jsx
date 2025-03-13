@@ -63,7 +63,7 @@ useEffect(() => {
       </div>
 
       {/* Right Content - Image Gallery */}
-      <div ref={containerRef} className="flex justify-end">
+      <div ref={containerRef} className="flex justify-end overflow-hidden">
         <div className="grid grid-cols-4 gap-2 ml-[25%]">
           <div className="lg:mt-32 mt-8">
             <video
