@@ -1,7 +1,38 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Hero from "./Hero";
-import { Instagram, Youtube } from "lucide-react";
+
 const ImageShow = () => {
+const containerRef = useRef(null);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        // Play all videos inside the container when visible
+        containerRef.current.querySelectorAll("video").forEach((video) => {
+          video.play();
+        });
+      } else {
+        // Pause all videos when out of view
+        containerRef.current.querySelectorAll("video").forEach((video) => {
+          video.pause();
+        });
+      }
+    },
+    { threshold: 0.5 }
+  );
+
+  if (containerRef.current) {
+    observer.observe(containerRef.current);
+  }
+
+  return () => {
+    if (containerRef.current) {
+      observer.unobserve(containerRef.current);
+    }
+  };
+}, []);
+
   return (
     <div className="">
       <div className="bg-[linear-gradient(to_bottom,#000000,#808080,#FFFFFF)] max-md:p-1">
@@ -28,44 +59,183 @@ const ImageShow = () => {
 
         {/* yaha se wo images add kiye h maine dekh le  */}
         {/* for larger screens */}
-        <section className="md:p-20 flex items mt-48 max-lg:hidden">
+                <section
+          ref={containerRef}
+          className="md:p-20 flex items mt-48 max-lg:hidden"
+        >
           <div className="grid grid-cols-5">
             <div>
-              <img src="ImageGallery/c1r1.png" className="p-4" />
-              <img src="ImageGallery/c1r2.png" />
+              <video
+                // ref={videoRef}
+                src="/ImageGallery/c1r1.mp4"
+                className="p-4 rounded-[32px]"
+                muted
+                playsInline
+                autoPlay
+                loop
+              />
+              <video
+                // ref={videoRef}
+                src="/ImageGallery/c1r2.mp4"
+                className="rounded-[32px]"
+                muted
+                playsInline
+                autoPlay
+                loop
+              />{" "}
             </div>
             <div className="-mt-32">
-              <img src="ImageGallery/c2r1.png" className="p-2" />
-              <img src="ImageGallery/c2r2.png" className="p-2" />
+              <video
+                // ref={videoRef}
+                src="/ImageGallery/c2r1.mp4"
+                className="p-2 rounded-[32px]"
+                muted
+                playsInline
+                autoPlay
+                loop
+              />{" "}
+              <video
+                // ref={videoRef}
+                src="/ImageGallery/c2r2.mp4"
+                className="p-2 rounded-[32px]"
+                muted
+                playsInline
+                autoPlay
+                loop
+              />{" "}
             </div>
             <div className="-mt-8">
-              <img src="ImageGallery/c3r1.png" className="p-4" />
-              <img src="ImageGallery/c3r2.png" className="p-4" />
+              <video
+                src="/ImageGallery/c3r1.mp4"
+                className="p-4 rounded-[32px]"
+                muted
+                playsInline
+                autoPlay
+                loop
+              />
+              <video
+                src="/ImageGallery/c3r2.mp4"
+                className="p-4 rounded-[32px]"
+                muted
+                playsInline
+                autoPlay
+                loop
+              />{" "}
             </div>
             <div className="mt-10">
-              <img src="ImageGallery/c4r1.png" className="p-4" />
-              <img src="ImageGallery/c4r2.png" className="p-4" />
+              <video
+                src="/ImageGallery/c4r1.mp4"
+                className="p-4 rounded-[32px]"
+                muted
+                playsInline
+                autoPlay
+                loop
+              />
+              <video
+                src="/ImageGallery/c4r2.mp4"
+                className="p-4 rounded-[32px]"
+                muted
+                playsInline
+                autoPlay
+                loop
+              />{" "}
             </div>
             <div className="-mt-20">
               <img src="ImageGallery/c5r1.png" className="p-4" />
-              <img src="ImageGallery/c5r2.png" className="p-4" />
+              <video
+                // ref={videoRef}
+                src="/ImageGallery/c5r2.mp4"
+                className="p-4 rounded-[32px]"
+                muted
+                playsInline
+                autoPlay
+                loop
+              />{" "}
             </div>
           </div>
         </section>
         {/*for mobile screens*/}
-        <section className="md:p-20 flex items lg:hidden">
+        <section ref={containerRef} className="md:p-20 flex items lg:hidden">
           <div className=" columns-2">
             {/*Column 1 */}
-            <img src="ImageGallery/c1r1.png" className="p-2" />
-            <img src="ImageGallery/c1r2.png" />
-            <img src="ImageGallery/c3r1.png" className="p-2" />
-            <img src="ImageGallery/c3r2.png" className="p-2" />
-            <img src="ImageGallery/c5r2.png" className="p-2" />
+            <video
+              // ref={videoRef}
+              src="/ImageGallery/c1r1.mp4"
+              className="p-2 rounded-[32px]"
+              muted
+              playsInline
+              autoPlay
+              loop
+            />{" "}
+            <video
+              // ref={videoRef}
+              src="/ImageGallery/c1r2.mp4"
+              className="rounded-[32px]"
+              muted
+              playsInline
+              autoPlay
+              loop
+            />{" "}
+            <video
+              src="/ImageGallery/c3r1.mp4"
+              className="p-2 rounded-[32px]"
+              muted
+              playsInline
+              autoPlay
+              loop
+            />{" "}
+            <video
+              src="/ImageGallery/c3r2.mp4"
+              className="p-2 rounded-[32px]"
+              muted
+              playsInline
+              autoPlay
+              loop
+            />{" "}
+            <video
+              // ref={videoRef}
+              src="/ImageGallery/c5r2.mp4"
+              className="p-2 rounded-[32px]"
+              muted
+              playsInline
+              autoPlay
+              loop
+            />{" "}
             {/*Column 2 */}
-            <img src="ImageGallery/c2r1.png" className="p-2" />
-            <img src="ImageGallery/c4r2.png" className="p-2" />
-            <img src="ImageGallery/c4r1.png" className="p-2" />
-            <img src="ImageGallery/c2r2.png" className="p-2" />
+            <video
+              // ref={videoRef}
+              src="/ImageGallery/c2r1.mp4"
+              className="p-2 rounded-[32px]"
+              muted
+              playsInline
+              autoPlay
+              loop
+            />{" "}
+            <video
+              src="/ImageGallery/c4r2.mp4"
+              className="p-2 rounded-[32px]"
+              muted
+              playsInline
+              autoPlay
+              loop
+            />{" "}
+            <video
+              src="/ImageGallery/c4r1.mp4"
+              className="p-2 rounded-[32px]"
+              muted
+              playsInline
+              autoPlay
+              loop
+            />{" "}
+            <video
+              // ref={videoRef}
+              src="/ImageGallery/c2r2.mp4"
+              className="p-2 rounded-[32px]"
+              muted
+              playsInline
+              autoPlay
+              loop
+            />{" "}
             <img src="ImageGallery/c5r1.png" className="p-2" />
           </div>
         </section>
