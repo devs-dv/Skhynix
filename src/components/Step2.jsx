@@ -2,10 +2,10 @@ import React from "react";
 
 const Step2 = () => {
   return (
-    <div className="md:mt-40">
+    <div className="md:mt-40 mt-96">
       <img
         src="Vectors/dot1.png"
-        className="absolute w-72 h-auto -right-0 mt-56"
+        className="absolute w-72 h-auto -right-0 mt-56 max-md:mt-10 -z-10"
       />
       <div className="relative top-[72rem]">
         <img
@@ -18,7 +18,7 @@ const Step2 = () => {
         />
       </div>
       <div className="max-w-6xl flex mx-auto  px-4 py-8  relative">
-        <div className="columns-2">
+        <div className="lg:columns-2">
           <div>
             <p className="text-[#A5C403] text-xl font-bold mb-4">STEP.2</p>
             <h2 className="font-bold text-2xl mb-10">
@@ -48,7 +48,7 @@ const Step2 = () => {
               생성했다.
             </p>
           </div>
-          <img src="step2.2.png" className="w-96 mt-16" />
+          <img src="step2.2.png" className="w-96 lg:mt-16" />
           <div className="space-y-3">
             <img src="step2.1.png" className=" w-96 h-auto" />
             <h2 className="font-bold text-2xl">
@@ -69,7 +69,7 @@ const Step2 = () => {
               극대화하는 마케팅 전략으로 주목받고 있다.
             </p>
           </div>
-          <div className="mt-20 space-y-4 -ml-32">
+          <div className="lg:mt-20 mt-10 space-y-4 lg:-ml-32">
             <h2 className="text-2xl font-bold">
               AI 기반 카툰 & 피드 연결 콘텐츠
             </h2>
