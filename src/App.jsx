@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-import './App.css'
 
 import AIMusicGenerator from './components/Step4'
 import SKHynixAIPage from './components/FeatureCards'
