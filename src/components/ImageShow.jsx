@@ -38,7 +38,7 @@ useEffect(() => {
       <div className="bg-[linear-gradient(to_bottom,#000000,#000000,#4D4D4D,#C5C5C5,#FFFFFF)] max-md:p-1">
         <Hero />
         {/* ye wale mei maine mission dala h yaha se  */}
-        <section className="w-full flex flex-col items-center text-center lg:mt-20 max-md:mt-5 max-md:mb-12 ">
+        <section className="w-full flex flex-col items-center text-center lg:pt-28 max-md:mt-5 max-md:mb-12 ">
           <div className=" max-w-full text-xl max-md:text-base text-[#A5C403] border-2 border-[#A5C403] px-8 py-2 max-md:py-1 max-md:px-6 rounded-full">
             Mission
           </div>

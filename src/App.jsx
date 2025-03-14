@@ -1,8 +1,7 @@
 import { useState } from 'react'
 
 import './App.css'
-import AIDailyGallery from './components/AIDailyGallery'
-import Steps from './components/Steps'
+
 import AIMusicGenerator from './components/Step4'
 import SKHynixAIPage from './components/FeatureCards'
 import EpilogueSection from './components/Epilogue'
