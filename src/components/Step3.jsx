@@ -33,7 +33,7 @@ export default function AIContentSection() {
           </p>
 
           {/* Image Cards */}
-          <div className="flex flex-col items-center md:flex-row gap-0 relative">
+          <div className="flex flex-col-1 items-center md:flex-row gap-0 relative">
             {/* Left Image (Overlap Right) */}
             <div className="rounded-2xl overflow-hidden relative md:-mr-20 z-0">
               <img

@@ -9,7 +9,7 @@ export default function Step1() {
 
         <div className="flex-1">
           <div className="mb-8">
-            <h3 className="text-[#A5C403] font-bold text-lg">STEP. 1</h3>
+            <h3 className="text-[#A5C403] font-bold text-lg max-md:mb-4">STEP. 1</h3>
             <h2 className="text-2xl font-bold mt-2">기존 AI 콘텐츠 분석</h2>
           </div>
           <p className="text-gray-700 text-sm leading-relaxed">

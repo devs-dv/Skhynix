@@ -8,19 +8,26 @@ const Comp1 = () => {
         <div className="mx-auto max-w-4xl">
           {/* Social Media Icons */}
           <div className="flex justify-center space-x-3 mb-4">
-            <img src="insta.png" className="w-auto h-8" />
-            <img src="youtube.png" className="w-auto h-8" />
+            <a href="https://www.instagram.com/skhynix_official?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== ">
+              {" "}
+              <img src="insta.png" className="w-auto h-8" />
+            </a>
+            <a href="https://youtube.com/@skhynix?si=UX7tju6ku3nTOvRC">
+              {" "}
+              <img src="youtube.png" className="w-auto h-8" />
+            </a>
           </div>
 
           {/* Disclaimer Text */}
-          <p className="text-center text-sm text-gray-600 mb-20">
-            *SK하이닉스 공식 인스타그램 / 유튜브에서 DAILY를 확인할 수 있습니다.
+          <p className="text-center md:text-xs lg:text-sm text-gray-600 mb-20">
+            <span className="text-[#A5C403]">*</span>SK하이닉스 공식 인스타그램
+            / 유튜브에서 DAILY를 확인할 수 있습니다.
             <br />
             (아이콘 클릭 시 해당 페이지로 이동합니다.)
           </p>
 
           {/* Main Content */}
-          <div className="">
+          <div className="md:mb-14 md:mt-12">
             {/* English Subtitle */}
             <h2 className="text-center text-2xl font-bold text-[#9abb0f] mb-6">
               How To Make It

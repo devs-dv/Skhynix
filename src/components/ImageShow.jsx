@@ -38,11 +38,11 @@ useEffect(() => {
       <div className="bg-[linear-gradient(to_bottom,#000000,#000000,#4D4D4D,#C5C5C5,#FFFFFF)] max-md:p-1">
         <Hero />
         {/* ye wale mei maine mission dala h yaha se  */}
-        <section className="w-full flex flex-col items-center text-center lg:mt-20">
+        <section className="w-full flex flex-col items-center text-center lg:mt-20 max-md:mt-5 max-md:mb-12 ">
           <div className=" max-w-full text-xl max-md:text-base text-[#A5C403] border-2 border-[#A5C403] px-8 py-2 max-md:py-1 max-md:px-6 rounded-full">
             Mission
           </div>
-          <h2 className="text-white text-5xl max-md:text-2xl font-bold leading-none text-center mt-5 max-md:max-w-full max-md:text-[40px]">
+          <h2 className="text-white text-5xl max-md:text-xl font-bold leading-none text-center mt-5 max-md:max-w-full max-md:text-[40px]">
             AI로 DAILY 콘텐츠 제작하기
           </h2>
           <p className="text-white text-sm max-md:text-xs mt-10">
@@ -213,7 +213,7 @@ useEffect(() => {
             />{" "}
             <video
               src="/ImageGallery/c4r2.mp4"
-              className="p-2 rounded-[32px]"
+              className="p-2 rounded-[32px] max-md:mb-20"
               muted
               playsInline
               autoPlay
@@ -221,7 +221,7 @@ useEffect(() => {
             />{" "}
             <video
               src="/ImageGallery/c4r1.mp4"
-              className="p-2 rounded-[32px]"
+              className="p-2 -mt-20 rounded-[32px]"
               muted
               playsInline
               autoPlay
@@ -240,8 +240,6 @@ useEffect(() => {
           </div>
         </section>
       </div>
-
-      
     </div>
   );
 };

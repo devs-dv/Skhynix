@@ -2,7 +2,7 @@ import React from "react";
 
 const Step2 = () => {
   return (
-    <div className="">
+    <div className="md:mt-40">
       <img
         src="Vectors/dot1.png"
         className="absolute w-72 h-auto -right-0 mt-56"

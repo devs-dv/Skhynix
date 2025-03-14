@@ -94,7 +94,7 @@ useEffect(() => {
               playsInline
             />
           </div>
-          <div className="lg:mt-36 mt-5">
+          <div className="lg:mt-36 mt-5 max-md:-mt-5">
             <video
               src="/hero/c3r1.mp4"
               className="w-80 h-auto rounded-[16px] max-md:rounded-lg m-3"
@@ -112,7 +112,7 @@ useEffect(() => {
               playsInline
             />
           </div>
-          <div className="lg:-mt-5">
+          <div className="lg:-mt-5  max-md:-mt-5">
             <video
               src="/hero/c4r1.mp4"
               className="w-80 h-auto rounded-[16px] max-md:rounded-lg m-5"

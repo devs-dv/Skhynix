@@ -26,7 +26,7 @@ const AIMusicGenerator = () => {
       <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:gap-12">
         {/* Left side content */}
         <div className="lg:w-1/2 mb-8 lg:mb-0">
-          <div className="text-lime-500 text-xl font-bold mb-2">STEP. 4</div>
+          <div className="text-[#A5C403] text-xl font-bold mb-2">STEP. 4</div>
           <h2 className="text-3xl font-bold mb-6">AI 음원 결합</h2>
 
           <p className="text-gray-700 mb-8">
@@ -35,7 +35,7 @@ const AIMusicGenerator = () => {
             프롬프트와 DAILY를 표현하는 문장과 키워드를 입력하는 것이 중요하다.
           </p>
 
-          <h3 className="text-lime-500 font-bold text-2xl mb-3">
+          <h3 className="text-[#A5C403] font-bold text-2xl mb-3">
             맞춤형 AI 음원 제작
           </h3>
           <p className="text-gray-700 mb-8">
@@ -43,7 +43,7 @@ const AIMusicGenerator = () => {
             설정해 AI 음원을 생성한다.
           </p>
 
-          <h3 className="text-lime-500 font-bold text-2xl mb-3">
+          <h3 className="text-[#A5C403] font-bold text-2xl mb-3">
             사운드 디자인 최적화
           </h3>
           <p className="text-gray-700 mb-8">
@@ -63,7 +63,7 @@ const AIMusicGenerator = () => {
                 <button
                   className={`w-12 h-6 rounded-full flex items-center transition-colors duration-300 ${
                     customMode
-                      ? "bg-lime-400 justify-end"
+                      ? "bg-[#A5C403] justify-end"
                       : "bg-gray-600 justify-start"
                   }`}
                   onClick={() => setCustomMode(!customMode)}
@@ -77,7 +77,7 @@ const AIMusicGenerator = () => {
                 <button
                   className={`w-12 h-6 rounded-full flex items-center transition-colors duration-300 ${
                     lyricsMode
-                      ? "bg-lime-400 justify-end"
+                      ? "bg-[#A5C403] justify-end"
                       : "bg-gray-600 justify-start"
                   }`}
                   onClick={() => setLyricsMode(!lyricsMode)}
@@ -104,7 +104,7 @@ const AIMusicGenerator = () => {
             </div>
 
             {/* Generate button */}
-            <button className="w-full py-4 bg-lime-400 rounded-full text-center font-medium">
+            <button className="w-full py-4 bg-[#A5C403] rounded-full text-center font-medium">
               생성
             </button>
           </div>
