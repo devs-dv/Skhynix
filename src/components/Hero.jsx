@@ -37,7 +37,7 @@ useEffect(() => {
     <section className="max-md:h-60">
       {/* Left Content */}
 
-      <div className="flex flex-col items-center justify-center absolute lg:w-[50%] max-md:p-2 backdrop-blur-md lg:h-[105vh] h-60">
+      <div className="z-10 flex flex-col items-center justify-center absolute lg:w-[50%] max-md:p-2 backdrop-blur-md lg:h-[105vh] h-60">
         <div className="space-y-6 lg:text-xl max-md:text-[8px]">
           <p className=" font-bold rounded-full flex items-center max-md:gap-2 gap-5">
             <span className="bg-[#A5C403] px-6 py-2 max-md:px-3 max-md:py-1 rounded-full text-white">

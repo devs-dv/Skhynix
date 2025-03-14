@@ -38,7 +38,7 @@ useEffect(() => {
       <div className="bg-[linear-gradient(to_bottom,#000000,#000000,#4D4D4D,#C5C5C5,#FFFFFF)] max-md:p-1">
         <Hero />
         {/* ye wale mei maine mission dala h yaha se  */}
-        <section className="w-full flex flex-col items-center text-center lg:pt-28 max-md:mt-5 max-md:mb-12 ">
+        <section className="w-full flex flex-col items-center text-center lg:pt-28 max-md:mt-5 max-md:mb-12 z-10">
           <div className=" max-w-full text-xl max-md:text-base text-[#A5C403] border-2 border-[#A5C403] px-8 py-2 max-md:py-1 max-md:px-6 rounded-full">
             Mission
           </div>
@@ -64,7 +64,7 @@ useEffect(() => {
           className="md:p-20 flex items mt-48 max-lg:hidden"
         >
           <div className="grid grid-cols-5">
-            <div>
+            <div className="z-10">
               <video
                 // ref={videoRef}
                 src="/ImageGallery/c1r1.mp4"
@@ -84,7 +84,7 @@ useEffect(() => {
                 loop
               />{" "}
             </div>
-            <div className="-mt-32">
+            <div className="-mt-32 z-10">
               <video
                 // ref={videoRef}
                 src="/ImageGallery/c2r1.mp4"
@@ -104,7 +104,7 @@ useEffect(() => {
                 loop
               />{" "}
             </div>
-            <div className="-mt-8">
+            <div className="-mt-8 z-10">
               <video
                 src="/ImageGallery/c3r1.mp4"
                 className="p-4 rounded-[32px]"
@@ -122,7 +122,7 @@ useEffect(() => {
                 loop
               />{" "}
             </div>
-            <div className="mt-10">
+            <div className="mt-10 z-10">
               <video
                 src="/ImageGallery/c4r1.mp4"
                 className="p-4 rounded-[32px]"
@@ -140,7 +140,7 @@ useEffect(() => {
                 loop
               />{" "}
             </div>
-            <div className="-mt-20">
+            <div className="-mt-20 z-10">
               <img src="ImageGallery/c5r1.png" className="p-4" />
               <video
                 // ref={videoRef}
@@ -155,8 +155,11 @@ useEffect(() => {
           </div>
         </section>
         {/*for mobile screens*/}
-        <section ref={containerRef} className="md:p-20 flex items lg:hidden">
-          <div className=" columns-2">
+        <section
+          ref={containerRef}
+          className="md:p-20 flex items lg:hidden z-50"
+        >
+          <div className=" columns-2 z-10">
             {/*Column 1 */}
             <video
               // ref={videoRef}
@@ -239,6 +242,7 @@ useEffect(() => {
             <img src="ImageGallery/c5r1.png" className="p-2" />
           </div>
         </section>
+        <img src="Vectors/dot4.png" className="absolute top-0 z-0" />
       </div>
     </div>
   );
