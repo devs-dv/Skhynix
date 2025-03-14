@@ -73,12 +73,29 @@ function SKHynixAIPage() {
       </section>
 
       {/*Bar Section*/}
-      <section className="max-w-6xl mx-auto px-4 py-20 rounded-2xl bg-[#F5F5F5] my-8">
-    <div className="flex justify-between items-center rounded-full border border-black bg-[#F5F5F5] p-4 mx-32">
-      <span className="ml-4 font-bold">일상을 바꾸는 AI 이야기</span>
-      <button className="rounded-full text-xs font-medium">AI & LIFE 시리즈 모아보기</button>
-    </div>
-  </section>
+      <section className="hidden md:block max-w-6xl mx-auto px-4 py-20 rounded-2xl bg-[#F5F5F5] my-8 ">
+        <div className="flex justify-between items-center rounded-full border border-black bg-[#F5F5F5] p-4 mx-32">
+          <span className="ml-4 font-bold">일상을 바꾸는 AI 이야기</span>
+          <button className="rounded-full text-xs font-medium">
+            AI & LIFE 시리즈 모아보기
+          </button>
+        </div>
+      </section>
+
+      <section className="block lg:hidden max-w-6xl mx-auto px-4 py-10 rounded-2xl bg-[#F5F5F5] text-center">
+        {/* Title */}
+        <h2 className="text-2xl font-bold text-black mb-6">
+          일상을 바꾸는 AI 이야기
+        </h2>
+
+        {/* Button */}
+        <button className="flex items-center justify-between bg-black text-white font-medium rounded-full px-6 py-3 w-fit mx-auto">
+          AI & LIFE 시리즈 모아보기
+          <span className="ml-3 flex items-center justify-center w-8 h-8 bg-white text-black rounded-full">
+            →
+          </span>
+        </button>
+      </section>
 
       {/* Footer */}
       <img src="Footer.png" className=""></img>

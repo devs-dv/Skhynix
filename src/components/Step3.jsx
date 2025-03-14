@@ -9,7 +9,7 @@ export default function AIContentSection() {
         />
 
         {/* Content */}
-        <div className="relative z-10">
+        <div className="relative z-10 py-8 mt-28">
           <div className="text-[#A5C403] font-bold text-lg mb-3">
             STEP. 3
           </div>
@@ -33,7 +33,7 @@ export default function AIContentSection() {
           </p>
 
           {/* Image Cards */}
-          <div className="flex flex-col-1 items-center md:flex-row gap-0 relative">
+          <div className="flex flex-col-1 items-center lg:pt-28 md:flex-row gap-0 relative">
             {/* Left Image (Overlap Right) */}
             <div className="rounded-2xl overflow-hidden relative md:-mr-20 z-0">
               <img

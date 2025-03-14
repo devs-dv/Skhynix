@@ -1,6 +1,6 @@
 export default function EpilogueSection() {
   return (
-    <div className="w-full max-w-7xl mx-auto">
+    <div className="w-full max-w-7xl mx-auto mb-28">
       <div className="relative rounded-[2rem] overflow-hidden  p-8 md:p-12">
         <div
           className="absolute top-0 right-0 w-full h-full bg-no-repeat bg-cover"

@@ -21,14 +21,27 @@ function App() {
   return (
     <>
       <NavBar />
+
       <ImageShow />
-      <div className="bg-[url('/bgStep1.png')] bg-[125px_15px] bg-no-repeat bg-center w-full h-screen bg-cover bg-center w-full h-screen">
+      <div className="bg-[url('/bgStep1.png')] bg-[125px_15px] bg-no-repeat bg-center w-full h-screen bg-cover bg-center w-full h-screen ">
         <Comp1 />
         <Step1 />
       </div>
       <Step2 />
-      <AIContentSection />
-      <AIMusicGenerator />
+
+      <div
+        className="relative w-full min-h-screen bg-no-repeat bg-cover"
+        style={{
+          backgroundImage: "url('/bgStep34.png')",
+          backgroundPosition: "center top -296px",
+        }}
+      >
+        <div className="relative z-10">
+          <AIContentSection />
+          <AIMusicGenerator />
+        </div>
+      </div>
+
       <EpilogueSection />
       <SKHynixAIPage />
     </>

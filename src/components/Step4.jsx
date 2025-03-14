@@ -17,11 +17,11 @@ const AIMusicGenerator = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto p-4 relative">
-      {/* Background pattern */}
+    <div className="max-w-6xl mx-auto p-4 py-8 pb-[300px]  mb-12 pt-20 relative">
+      {/* Background pattern
       <div className="absolute inset-0 z-0 opacity-10">
         <div className="absolute right-0 top-0 w-full h-full bg-[url('https')] bg-no-repeat bg-contain"></div>
-      </div>
+      </div> */}
 
       <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:gap-12">
         {/* Left side content */}
